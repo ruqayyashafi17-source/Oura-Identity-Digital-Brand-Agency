@@ -11,16 +11,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 menuIcon.classList.toggle('fa-xmark');
             }
         });
-
-        // Close mobile menu when clicking any navigation link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                if (menuIcon) {
-                    menuIcon.classList.add('fa-bars');
-                    menuIcon.classList.remove('fa-xmark');
-                }
-            });
-        });
     }
 });
